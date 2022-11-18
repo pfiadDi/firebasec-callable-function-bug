@@ -2,7 +2,7 @@
 
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js'
 
-import { getFunctions } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-functions.js'
+import { getFunctions, httpsCallable } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-functions.js'
 
 
 const firebaseConfig = {}
@@ -14,8 +14,8 @@ const functions = getFunctions(app,"europe-west3")
 
 const importCsv = httpsCallable(functions, "importCsv");
 importCsv({
-        csv: portData.payload.file,
-        importName: portData.payload.importName,
+        csv: "portData.payload.file",
+        importName: "portData.payload.importName",
       })
         .then((result) => {
           const data = result.data;
