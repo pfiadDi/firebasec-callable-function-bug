@@ -1,0 +1,29 @@
+{
+  "name": "firebasec-callable-function-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "firebase emulators:start",
+    "build": "./node_modules/parcel/lib/bin.js index.html --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfiadDi/firebasec-callable-function-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfiadDi/firebasec-callable-function-bug/issues"
+  },
+  "homepage": "https://github.com/pfiadDi/firebasec-callable-function-bug#readme",
+  "dependencies": {
+    "firebase": "^9.14.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
+  }
+}
