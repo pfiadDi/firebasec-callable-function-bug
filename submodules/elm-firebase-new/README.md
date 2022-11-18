@@ -15,6 +15,8 @@ Add to to your model:
 , user : Firebase.User.UserMasterData
 , loginUiShown : Bool
 
+
+
 ```
 
 Add this flag:
