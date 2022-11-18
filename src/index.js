@@ -1,11 +1,16 @@
 //import "babel-polyfill";
-import { firebaseConfig } from "../firebaseConfig";
-import { initApp } from "../submodules/elm-firebase-new/ts/init/init";
 
-import { getFunctions } from 'firebase/functions';
-const fbApp = initApp(firebaseConfig(window.location.host));
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js'
 
-const functions = getFunctions(fbApp,"europe-west3")
+import { getFunctions } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-functions.js'
+
+
+const firebaseConfig = {}
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const functions = getFunctions(app,"europe-west3")
 
 const importCsv = httpsCallable(functions, "importCsv");
 importCsv({
